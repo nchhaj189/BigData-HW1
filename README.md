@@ -20,6 +20,9 @@ following or create a problem yourself.
 * Once you are done running, run the following command: ```docker-compose down```
 
 ## Running Experiment 1 in Docker Environment (Run the word count map-reduce program, and report the runtime for two different sizes of datasets.):
+
+### VERY IMPORTANT NOTE (MAINLY FOR WINDOWS USERS): If you are running into exceptions when running the Python Streaming MapReduce in ```step 14``` then this is most likely because the python files ```mapper.py``` and ```reducer.py``` have CRLF line endings instead of LF line endings, because the standard line endings for Windows files is CRLF, while for Mac and Linux its LF. You must convert the files from CRLF line endings to LF line endings. The only solution I have found for this issue is to copy the code from the file, then open the file in nano (in a linux vm or wsl2 if on windows) and then paste the code into the nano window and resave the file. This will ensure that line endings are LF. You can then rerun the first two commands of ```step 10``` to copy the two python files back over and then run the streaming command in ```step 14``` and it should work.
+
 ### A lot of the commands and directions, and the code are sourced from this tutorial: https://dev.to/boyu1997/run-python-mapreduce-on-local-docker-hadoop-cluster-1g46
 1. Open a terminal on your computer
 3. Navigate to the ```data/``` directory in the project structure. There you'll see two text files (```middlemarch.txt``` and ```mobydick.txt```) and a python file called ```duplicator.py```
