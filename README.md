@@ -19,7 +19,7 @@ following or create a problem yourself.
 * Make sure you are in the ```hadoop_docker``` folder and run the following command: ```docker-compose up -d```
 * Once you are done running, run the following command: ```docker-compose down```
 
-## Running Experiment 1 (Run the word count map-reduce program, and report the runtime for two different sizes of datasets.):
+## Running Experiment 1 in Docker Environment (Run the word count map-reduce program, and report the runtime for two different sizes of datasets.):
 ### A lot of the commands and directions, and the code are sourced from this tutorial: https://dev.to/boyu1997/run-python-mapreduce-on-local-docker-hadoop-cluster-1g46
 1. Open a terminal on your computer
 3. Navigate to the ```data/``` directory in the project structure. There you'll see two text files (```middlemarch.txt``` and ```mobydick.txt```) and a python file called ```duplicator.py```
@@ -64,3 +64,4 @@ following or create a problem yourself.
   * ```docker cp hadoop_docker_namenode_1:/opt/hadoop/small_dataset_python_output.txt small_dataset_python_output.txt```
   * ```docker cp hadoop_docker_namenode_1:/opt/hadoop/smaller_dataset_java_output.txt smaller_dataset_java_output.txt```
   * ```docker cp hadoop_docker_namenode_1:/opt/hadoop/small_dataset_java_output.txt smaller_dataset_java_output.txt```
+### Note that a lot of these commands won't need to be run if you have hadoop installed locally. If you have it installed locally, you can just make sure that you have the input and output directories set as you want them to be with the correct datasets in them (```smaller_dataset.txt``` and ```small_dataset.txt```). If you have the directories setup then you can just run the ```step 14``` commands locally (with correct paths and version numbers of the jars) and it should work (as long as your hadoop installation is correct).
