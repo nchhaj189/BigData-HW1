@@ -1,3 +1,4 @@
+```
 bash-4.2$ hadoop jar /opt/hadoop/share/hadoop/mapreduce/sources/hadoop-mapreduce-examples-3.3.6-sources.jar org.apache.hadoop.examples.WordCount input /output/small_dataset_java
 2023-09-09 02:33:16 INFO  DefaultNoHARMFailoverProxyProvider:64 - Connecting to ResourceManager at resourcemanager/172.25.0.5:8032
 2023-09-09 02:33:17 INFO  JobResourceUploader:907 - Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/hadoop/.staging/job_1694223498270_0003
@@ -153,3 +154,4 @@ bash-4.2$ hadoop jar /opt/hadoop/share/hadoop/mapreduce/sources/hadoop-mapreduce
                 Bytes Read=1571049056
         File Output Format Counters
                 Bytes Written=763788
+```

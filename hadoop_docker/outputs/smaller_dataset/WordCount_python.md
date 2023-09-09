@@ -1,3 +1,4 @@
+```
 bash-4.2$ hadoop jar /opt/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar -files mapper.py,reducer.py -mapper mapper.py -reducer reducer.py -input input2 -output output/smaller_dataset
 packageJobJar: [/tmp/hadoop-unjar4832540250519543630/] [] /tmp/streamjob2694652921070969623.jar tmpDir=null
 2023-09-09 03:01:03 INFO  DefaultNoHARMFailoverProxyProvider:64 - Connecting to ResourceManager at resourcemanager/172.25.0.5:8032
@@ -102,3 +103,4 @@ packageJobJar: [/tmp/hadoop-unjar4832540250519543630/] [] /tmp/streamjob26946529
         File Output Format Counters
                 Bytes Written=709095
 2023-09-09 03:04:02 INFO  StreamJob:1029 - Output directory: output/smaller_dataset
+```
