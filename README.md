@@ -5,8 +5,7 @@
 sizes of datasets.
 * Using MapReduce to solve another problem. You may choose one of the
 following or create a problem yourself.
-  * Consider a dataset of 20 files, print the top 100 words occurring in the
-  most files
+  * Take a large dataset of files and find the top 100 words
 
 ## How To Run My Hadoop Docker Environment:
 ### Files and Setup:
