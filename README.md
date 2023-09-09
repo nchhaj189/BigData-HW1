@@ -64,4 +64,10 @@ following or create a problem yourself.
   * ```docker cp hadoop_docker_namenode_1:/opt/hadoop/small_dataset_python_output.txt small_dataset_python_output.txt```
   * ```docker cp hadoop_docker_namenode_1:/opt/hadoop/smaller_dataset_java_output.txt smaller_dataset_java_output.txt```
   * ```docker cp hadoop_docker_namenode_1:/opt/hadoop/small_dataset_java_output.txt smaller_dataset_java_output.txt```
-### Note that a lot of these commands won't need to be run if you have hadoop installed locally. If you have it installed locally, you can just make sure that you have the input and output directories set as you want them to be with the correct datasets in them (```smaller_dataset.txt``` and ```small_dataset.txt```). If you have the directories setup then you can just run the ```step 14``` commands locally (with correct paths and version numbers of the jars) and it should work (as long as your hadoop installation is correct).
+### Note that a lot of these commands won't need to be run if you have hadoop installed locally. 
+### If you have it installed locally, you can just make sure that you: 
+#### - generate the data with ```step 2 and step 3``` 
+#### - have the input and output directories set as you want them to be with the correct datasets in them (```smaller_dataset.txt``` and ```small_dataset.txt```). 
+### If you have the directories setup then you can just run the ```step 14``` commands locally and it should work (as long as your hadoop installation is correct) just make sure to check the following before running:
+#### - correct paths and version numbers of the jars
+#### - correct paths to the ```mapper.py``` and ```reducer.py``` files; it might be beneficial to run directly from ```code/wordcount/``` directory when running the python streaming MapReduce code
