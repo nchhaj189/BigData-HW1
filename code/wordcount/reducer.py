@@ -3,8 +3,6 @@
 
 from operator import itemgetter
 import sys
-# import time
-# start_time = time.time()
 
 current_word = None
 current_count = 0
@@ -40,5 +38,3 @@ for line in sys.stdin:
 # do not forget to output the last word if needed!
 if current_word == word:
     print ('%s\t%s' % (current_word, current_count))
-
-# print("Mapper Execution Time: " + str(time.time()-start_time))

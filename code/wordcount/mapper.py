@@ -2,9 +2,6 @@
 """mapper.py code taken from https://dev.to/boyu1997/run-python-mapreduce-on-local-docker-hadoop-cluster-1g46"""
 
 import sys
-# import time
-
-# start_time = time.time()
 
 # input comes from STDIN (standard input)
 for line in sys.stdin:
@@ -20,5 +17,3 @@ for line in sys.stdin:
         #
         # tab-delimited; the trivial word count is 1
         print ('%s\t%s' % (word, 1))
-
-# print("Mapper Execution Time: " + str(time.time()-start_time))
