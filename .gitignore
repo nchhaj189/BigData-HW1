@@ -1,2 +1,3 @@
-hadoop_docker/data/smaller_dataset.txt
-hadoop_docker/data/small_dataset.txt
+data/smaller_dataset.txt
+data/small_dataset.txt
+hadoop_docker/test.sh/
