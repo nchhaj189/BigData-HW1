@@ -59,7 +59,7 @@ following or create a problem yourself.
    * ```hadoop fs -getmerge output/small_dataset/part-00000 /opt/hadoop/small_dataset_python_output.txt```
    * ```hadoop fs -getmerge output/smaller_dataset_java/part-00000 /opt/hadoop/smaller_dataset_java_output.txt```
    * ```hadoop fs -getmerge output/small_dataset/part-00000 /opt/hadoop/smaller_dataset_java_output.txt```
-* Exit the container terminal with ```exit```, and then run the following commands:
+* Exit the container terminal with ```exit```, and then run the following commands in your local terminal, wherever you would like to store the files:
   * ```docker cp hadoop_docker_namenode_1:/opt/hadoop/smaller_dataset_python_output.txt smaller_dataset_python_output.txt```
   * ```docker cp hadoop_docker_namenode_1:/opt/hadoop/small_dataset_python_output.txt small_dataset_python_output.txt```
   * ```docker cp hadoop_docker_namenode_1:/opt/hadoop/smaller_dataset_java_output.txt smaller_dataset_java_output.txt```
